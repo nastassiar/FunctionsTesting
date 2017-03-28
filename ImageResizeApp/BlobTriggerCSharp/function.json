@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "original",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "images/{name}",
+      "connection": "DefaultEndpointsProtocol=https;AccountName=nastassiastorage;AccountKey=cl5BInnM2KKpCEA9AXajmVn/nL94SWcK8ScDGw0a/1TjNYfOVihglNAmj/nrxs918pjbnjEiabqK2/hl6hV7SQ==;EndpointSuffix=core.windows.net"
+    },
+    {
+      "type": "blob",
+      "name": "resized",
+      "path": "thumbnails/{name}",
+      "connection": "DefaultEndpointsProtocol=https;AccountName=nastassiastorage;AccountKey=cl5BInnM2KKpCEA9AXajmVn/nL94SWcK8ScDGw0a/1TjNYfOVihglNAmj/nrxs918pjbnjEiabqK2/hl6hV7SQ==;EndpointSuffix=core.windows.net",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
